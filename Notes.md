@@ -8,8 +8,8 @@
 
 把工作区文件添加到版本库
 
-> git add a.b  
-> git commit -m "sth"
+> git add _file_  
+> git commit -m "_msg_"
 
 ## 时光机穿梭
 
@@ -17,7 +17,9 @@
 
 > git status
 
-比较修改内容
+比较未add的修改内容
+
+> git diff _file_
 
 ## 远程仓库
 
