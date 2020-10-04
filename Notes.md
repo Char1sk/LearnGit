@@ -33,6 +33,14 @@
 > git reset --hard HEAD^^
 > git reset --hard HEAD~2
 
+跳转某个版本
+
+> git reset --hard _commit-id_
+
+查看记录改动命令及版本号
+
+> git reflog
+
 ## 远程仓库
 
 ## 分支管理
