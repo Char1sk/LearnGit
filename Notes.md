@@ -21,6 +21,18 @@
 
 > git diff _file_
 
+### 版本回退
+
+查看现有版本
+
+> git log
+> git log --pretty=oneline
+
+回退曾经版本
+
+> git reset --hard HEAD^^
+> git reset --hard HEAD~2
+
 ## 远程仓库
 
 ## 分支管理
