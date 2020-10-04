@@ -3,42 +3,35 @@
 ## 创建版本库
 
 创建本地仓库
-
 > git init
 
 把工作区文件添加到版本库
-
 > git add _file_  
 > git commit -m "_msg_"
 
 ## 时光机穿梭
 
 掌握仓库当前状态
-
 > git status
 
 比较未add的修改内容
-
 > git diff _file_
 
 ### 版本回退
 
-查看现有版本
+查看现有版本（现有时间线）
 
 > git log
 > git log --pretty=oneline
 
 回退曾经版本
-
 > git reset --hard HEAD^^
 > git reset --hard HEAD~2
 
 跳转某个版本
-
 > git reset --hard _commit-id_
 
-查看记录改动命令及版本号
-
+查看记录改动命令及版本号（对时间线做的每一个变动）
 > git reflog
 
 注意！  
@@ -61,18 +54,27 @@
 git跟踪并管理的是修改而非文件（git只能判断出纯文本文件的修改，诸如word或jpg都不行）
 
 比较工作区文件与某版本该文件的区别
-
 > git diff HEAD^ -- _file_
 
 ### 撤销修改
 
 恢复工作区到最近add/commit时的状态
-
 > git checkout -- _file_
 
 撤销暂存区修改
-
 > git reset HEAD _file_
+
+### 删除文件
+
+先手动删除，之后执行命令之一：
+> rm _file_
+> git rm _file_  
+> git add _file_
+> git commit -m "_msg_"
+
+如果误删且没有add，则恢复：
+> rm _file_
+> git checkout -- _file_
 
 ## 远程仓库
 
