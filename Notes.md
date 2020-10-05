@@ -298,3 +298,7 @@ Fork从别人远程仓库克隆到自己远程仓库，再clone从自己远程�
 一个图形界面工具，管理git。
 
 ## 总结
+
+[Git Cheat Sheet](https://gitee.com/liaoxuefeng/learn-java/raw/master/teach/git-cheatsheet.pdf)
+
+[Git Branching](https://learngitbranching.js.org/?locale=zh_CN)
