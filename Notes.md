@@ -128,6 +128,17 @@ git冲突会产生于多个分支修改了同一个文件后合并时（push和p
 查看分支合并情况
 > git log --graph
 
+### 分支管理策略
+
+git在合并时会尽可能使用FastForward模式，但容易丢失信息。
+
+强制禁用FastForward模式（会创建新节点，需要-m信息）
+> git merge --no-ff -m "_msg_" _br_
+
+- master分支应当稳定，一般仅用来发布新版本
+- dev分支可以是不稳定的，平时可干活，做好了合并到master
+- name分支是每个人个人分支，可以时不时向dev合并
+
 ## 标签管理
 
 ## 使用GitHub
