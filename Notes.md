@@ -211,6 +211,23 @@ git在合并时会尽可能使用FastForward模式，但容易丢失信息。
 
 标签是某个版本库的快照，它实际是指向某个提交的指针，且不能移动。tag就是一个有意义的名字，和某个commit绑定到一起。
 
+### 创建标签
+
+查看当前分支的所有标签（字母排序）
+> git tag
+
+在当前分支当前节点打标签
+> git tag _tag_
+
+为当前分支指定提交打标签
+> git tag _tag_ _commit-id_
+
+创建带有说明的标签
+> git tag -a _tag_ -m "_msg_" _commit-id_
+
+查看指定标签信息
+> git show _tag_
+
 ## 使用GitHub
 
 ## 使用Gitee
