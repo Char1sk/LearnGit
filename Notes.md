@@ -139,6 +139,30 @@ git在合并时会尽可能使用FastForward模式，但容易丢失信息。
 - dev分支可以是不稳定的，平时可干活，做好了合并到master
 - name分支是每个人个人分支，可以时不时向dev合并
 
+### Bug分支
+
+在进行工作时，若发现之前版本有bug，则可以新建分支进行修复，之后合并分支，并在其他分支进行修改。
+
+工作区和暂存区有修改未提交或未保存时，无法切换分支。
+
+保存工作区和暂存区修改
+> git stash
+
+查看保存的工作现场
+> git stash list
+
+恢复工作现场
+> git stash apply
+
+删除工作现场
+> git stash drop
+
+恢复并删除工作现场
+> git stash pop
+
+复制一个特定的提交
+> git cherry-pick _commit-id_
+
 ## 标签管理
 
 ## 使用GitHub
