@@ -160,8 +160,15 @@ git在合并时会尽可能使用FastForward模式，但容易丢失信息。
 恢复并删除工作现场
 > git stash pop
 
-复制一个特定的提交
+复制一个特定的提交（算作另一次新提交）
 > git cherry-pick _commit-id_
+
+### Feature分支
+
+开发一个新功能，可以新建一个分支。
+
+强制删除未被合并的分支
+> git branch -D _br_
 
 ## 标签管理
 
@@ -174,4 +181,3 @@ git在合并时会尽可能使用FastForward模式，但容易丢失信息。
 ## 使用SourceTree
 
 ## 总结
-fix the bug
