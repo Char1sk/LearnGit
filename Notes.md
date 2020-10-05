@@ -21,11 +21,11 @@
 
 查看现有版本（现有时间线）
 
-> git log
+> git log  
 > git log --pretty=oneline
 
 回退曾经版本
-> git reset --hard HEAD^^
+> git reset --hard HEAD^^  
 > git reset --hard HEAD~2
 
 跳转某个版本
@@ -67,13 +67,13 @@ git跟踪并管理的是修改而非文件（git只能判断出纯文本文件�
 ### 删除文件
 
 先手动删除，之后执行命令之一：
-> rm _file_
+> rm _file_  
 > git rm _file_  
-> git add _file_
+> git add _file_  
 > git commit -m "_msg_"
 
 如果误删且没有add，则恢复：
-> rm _file_
+> rm _file_  
 > git checkout -- _file_
 
 ## 远程仓库
@@ -92,6 +92,32 @@ git跟踪并管理的是修改而非文件（git只能判断出纯文本文件�
 > git clone _url_
 
 ## 分支管理
+
+### 创建与合并分支
+
+HEAD指向当前所在分支，分支指向当前分支线的提交点。
+
+创建分支
+> git branch _br_
+
+切换分支
+> git checkout _br_  
+> git switch _br_
+
+创建并切换到新分支
+> git checkout -b _br_  
+> git switch -c _br_
+
+列出所有分支
+> git branch
+
+将某一分支合并到当前分支
+> git merge _br_
+
+删除分支
+> git branch -d _br_
+
+有时候会进行FastForward模式合并，直接把当前分支指向目标分支。
 
 ## 标签管理
 
