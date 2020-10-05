@@ -174,3 +174,4 @@ git在合并时会尽可能使用FastForward模式，但容易丢失信息。
 ## 使用SourceTree
 
 ## 总结
+fix the bug
