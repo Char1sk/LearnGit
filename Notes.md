@@ -228,6 +228,20 @@ git在合并时会尽可能使用FastForward模式，但容易丢失信息。
 查看指定标签信息
 > git show _tag_
 
+### 操作标签
+
+删除本地标签
+> git tag -d _tag_
+
+推送标签到远程
+> git push origin _tag_
+
+推送全部未推送的标签
+> git push origin --tags
+
+删除远程标签（推送空标签到指定标签）
+> git push origin :ref/tags/_tag_
+
 ## 使用GitHub
 
 ## 使用Gitee
